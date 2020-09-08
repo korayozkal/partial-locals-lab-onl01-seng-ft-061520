@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
-   def index
+  def index
     @students = Student.search(params[:query])
     render 'index'
   end
